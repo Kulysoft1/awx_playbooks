@@ -1,0 +1,8 @@
+---
+- hosts: all
+  gather_facts: False
+  tasks:
+    - name: Show uname
+      shell: uname -a
+      ignore_errors: True
+      
